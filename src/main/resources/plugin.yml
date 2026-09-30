@@ -1,0 +1,17 @@
+name: TeamsPlugin
+version: '1.0'
+main: dev.teams.TeamsPlugin
+api-version: '1.21'
+description: Player teams with colors, team chat, glow and pvp toggle.
+commands:
+  team:
+    description: Team commands
+    usage: /team <create|invite|accept|leave|kick|disband|info|pvp|chat>
+    aliases: [teams]
+  createteam:
+    description: Shortcut for /team create
+    usage: /createteam <name> <color>
+permissions:
+  teams.admin:
+    description: Lets you disband any team
+    default: op
